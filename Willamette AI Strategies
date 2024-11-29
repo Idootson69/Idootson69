@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willamette AI Strategies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Willamette AI Strategies</h1>
+        <p>Your partner in leveraging AI to transform and grow your business.</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#ai-consultant">AI Consultant</a>
+            <a href="#signup">Sign Up</a>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section>
+            <h2>Helping Businesses Thrive with AI</h2>
+            <p>Let us help your business harness the power of AI to grow and succeed.</p>
+            <button onclick="navigateToConsultant()">Start AI Consultant</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Willamette AI Strategies. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>function navigateToConsultant() {
+    alert("The AI Consultant is under construction! Stay tuned.");
+}/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+/* Background Styling */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    animation: bgFade 10s infinite;
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1em;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section Styling */
+main {
+    text-align: center;
+    padding: 2em;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Smooth Background Transition */
+@keyframes bgFade {
+    0% {
+        background-image: url('https://source.unsplash.com/1920x1080/?oregon,mountains');
+    }
+    25% {
+        background-image: url('https://source.unsplash.com/1920x1080/?oregon,forest');
+    }
+    50% {
+        background-image: url('https://source.unsplash.com/1920x1080/?oregon,waterfall');
+    }
+    75% {
+        background-image: url('https://source.unsplash.com/1920x1080/?oregon,desert');
+    }
+    100% {
+        background-image: url('https://source.unsplash.com/1920x1080/?oregon,rivers');
+    }
+}
